@@ -293,7 +293,7 @@ footer{
     justify-content: center;
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 425px) and (min-width: 375px){
     .navbar{
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -357,12 +357,12 @@ footer{
     }
 
     .form-input > input {
-        width: 40vh;
-        height: 10vh;
+        max-width: 25vh;
+        max-height: 5vh;
     }
     
     .button > button{
-        height: 10vh;
+        height: 5vh;
     }
     
     footer h4{
@@ -370,9 +370,112 @@ footer{
     }
 
     input[type=text]{
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 }
+
+@media only screen and (max-width: 374px) {
+    .navbar{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: normal;
+    }
+
+    .navbar  a:not(:nth-child(6)){
+        display: none;
+    }
+
+    .navbar a:nth-child(1){
+        display: block;
+        height: 15vh;
+        margin-right: 0;
+    }
+
+    .navbar a:nth-child(6){
+        display: block;
+        text-align: center;
+        width: 15vh;
+    }
+
+    .header {
+        height: 80vh;
+    }
+    
+    .judul{
+        margin-top: 0;
+        width: 60vh;
+        height: 70vh;
+    }
+    
+    .more > a{
+        padding: 0;
+    }
+    
+    .icon-header{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .icon-list-1  h5{
+        margin-bottom: 5vh;
+    }
+
+    .about {
+        flex-wrap: nowrap;
+        justify-content: normal;
+        flex-direction: column;
+    }
+    
+    .about-img{
+        margin-top: 5vh;
+    }
+    
+    .about-img{
+        width: 30vh;
+        height: 15vh;
+    }
+
+    .profile{
+        height: 50vh;
+    }
+    
+    .next{
+        width: 5vh;
+        height: 5vh;
+    }
+    
+    .profiles{
+        width: 30vh;
+        height: 50vh;
+    }
+    
+    .profile-image{
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .form-input > input {
+        max-width: 20vh;
+        max-height: 5vh;
+    }
+    
+    .button > button{
+        font-size: 1vh;
+        width: 10vh;
+        height: 5vh;
+    }
+    
+    footer h4{
+        font-size: 1vh;
+    }
+
+    input[type=text]{
+        font-size: 1vh;
+    }
+}
+
+
 
 @media only screen and (max-width: 903px) and (min-width: 620px){
     .navbar a:nth-child(1){

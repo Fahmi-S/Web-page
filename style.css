@@ -54,7 +54,7 @@ body{
 
 .header {
     height: 60vh;
-	background: url('gambar/laptop.jpg') center fixed;
+	background: url(./gambar/laptop.jpg) center fixed;
 	background-size: cover;
 	position: relative;
 	display: flex;
@@ -178,7 +178,7 @@ body{
 }
 
 .about-img{
-    background: url(gambar/logo-TOS.jpeg) center no-repeat;
+    background: url(./gambar/logo-TOS.jpeg) center no-repeat;
     background-size: cover;
     border-radius: 30px;
     width: 50vh;
@@ -212,7 +212,7 @@ body{
     width: 15vh;
     height: 15vh;
     border-radius: 100vh;
-    background: url(gambar/edhos.png) center;
+    background: url(./gambar/edhos.png) center;
     background-size: cover;
 }
 
@@ -224,14 +224,14 @@ body{
 .more-icon{
     max-width: 5vh;
     max-height: 5vh;
-    background: url(gambar/more.png) center;
+    background: url(./gambar/more.png) center;
     background-size: cover;
 }
 
 .next{
     max-width: 7vh;
     max-height: 7vh;
-    background: url(gambar/next.png) center;
+    background: url(./gambar/next.png) center;
     background-size: cover;
 }
 

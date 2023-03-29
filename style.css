@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px black solid; */
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.content{
+    /* width: 1330px; */
+    max-height: 1600px;
+    margin: 10px;
+    /* border: 1px solid black; */
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{  
+    text-decoration: none;
+    padding: 40px 15px;
+    color: #3b3b3b;
+    font-weight: bold;
+}
+
+.navbar a:nth-child(1){
+    order: 2;
+}
+
+.navbar a:nth-child(2){
+    order: 3;
+}
+
+.navbar a:nth-child(3){
+    order: 4;
+}
+
+.navbar a:nth-child(4){
+    order: 5;
+}
+
+.navbar a:nth-child(5){
+    order: 1;
+    margin-right: 20em;
+    padding: 0;
+}
+
+.header {
+    height: 60vh;
+	background: url('../gambar/laptop.jpg') center fixed;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header:after{
+    /* border: 1px solid black; */
+    /* display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* background-color: aqua;z */
+    /* background-size: cover;
+    height: 400px; */
+    content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    background-color: rgb(134, 213,213, .6);
+}
+
+
+.judul{
+    /* border: 1px solid black; */
+    text-align: center;
+    color: white;
+    max-width: 500px;
+    max-height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    z-index: 1;
+    /* justify-content: center; */
+}
+
+.judul > h2{
+    font-weight: bold;
+}
+
+.judul > p{
+    font-weight: bold;
+}
+
+.more > a{
+    font-weight: bold;
+}
+
+.more{
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.more > a{
+    /* border: 1px solid black; */
+    /* font-size: 2vh; */
+    text-decoration: none;
+    color: black;
+    padding: 30px 145px 30px 145px;
+}
+
+.service > h2{
+    text-align: center;
+}
+
+.icon-header{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.icons{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 10px;
+    background-color: rgb(51, 148, 148);
+    overflow: hidden;
+}
+
+.icon-list-1 > h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icon-list-1 > h5{
+    max-width: 150px;
+    /* max-height: 150px; */
+    font-size: 13px;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(134, 213,213);
+    padding: 10vh;
+}
+
+.about-text{
+    max-width: 60vh;
+}
+
+.about-us{
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+.about-img{
+    background: url(../gambar/logo-TOS.jpeg) center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    width: 50vh;
+    height: 30vh;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+}
+
+.next{
+    width: 100px;
+    height: 100px;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 40vh;
+    max-height: 50vh;
+}
+
+.profile-image{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100vh;
+    background: url(../gambar/edhos.png) center;
+    background-size: cover;
+}
+
+.profile-text,
+.profile-name {
+    text-align: center;
+}
+
+.more-icon{
+    max-width: 5vh;
+    max-height: 5vh;
+    background: url(../gambar/more.png) center;
+    background-size: cover;
+}
+
+.next{
+    max-width: 7vh;
+    max-height: 7vh;
+    background: url(../gambar/next.png) center;
+    background-size: cover;
+}
+
+.icon-next-1{
+    transform: rotate(180deg);
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(51, 148, 148);
+    height: 20vh;
+}
+
+.form-input > input {
+    border-radius: 10px;
+    border: 2px solid white;
+    width: 70vh;
+    height: 15vh;
+    background-color: rgb(51, 148, 148);
+}
+
+.button > button{
+    border-radius: 10px;
+    width: 25vh;
+    height: 15vh;
+    font-weight: bold;
+    color: rgb(51, 148, 148);
+    cursor: pointer;
+    background-color: white;
+}
+
+input::placeholder{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+input[type=text]:focus {
+    border: 2px solid white;
+}
+
+input[type=text]{
+    color: white;
+    font-size: 3vh;
+    outline: none;
+}
+
+footer{
+    padding: 5px;
+    margin-top: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+
+
+/* .header{ */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aqua;
+    background:url(./img/4.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 30px; */
+/* } */

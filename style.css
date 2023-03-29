@@ -170,7 +170,7 @@ body{
 }
 
 .about-text{
-    width: 60vh;
+    max-width: 60vh;
 }
 
 .about-us{
@@ -293,11 +293,9 @@ footer{
     justify-content: center;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 425px){
     .navbar{
-        display: flex;
         flex-wrap: nowrap;
-        overflow: hidden;
         justify-content: space-between;
         align-items: normal;
     }
@@ -372,6 +370,44 @@ footer{
     }
 
     input[type=text]{
+        font-size: 2vh;
+    }
+}
+
+@media only screen and (max-width: 903px) and (min-width: 620px){
+    .navbar a:nth-child(1){
+        display: block;
+        height: 20vh;
+        margin-right: 2em;
+    }
+
+    .header {
+        height: 80vh;
+    }
+    
+    .judul{
+        margin-top: 0;
+        width: 60vh;
+        height: 70vh;
+    }
+    
+    .more > a{
+        padding: 0;
+    }
+
+    .icon-list-1  h5{
+        margin-bottom: 5vh;
+    }
+
+    .profile{
+        height: 60vh;
+    }
+
+    .profiles{
+        height: 60vh;
+    }
+
+    footer h4{
         font-size: 2vh;
     }
 }

@@ -39,14 +39,28 @@ body{
     padding: 0;
 }
 
-.header {
-    height: 60vh;
-	background: url(./gambar/laptop.jpg) center fixed;
-	background-size: cover;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.header{
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+}
+
+.banner img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.slides{
+    display: none;
 }
 
 .header:after{
@@ -62,10 +76,11 @@ body{
 
 
 .judul{
+    position: absolute;
     text-align: center;
     color: white;
-    width: 500px;
-    height: 300px;
+    width: 100vh;
+    height: 60vh;
     padding: 10px;
     margin-top: 10px;
     z-index: 1;
@@ -203,18 +218,36 @@ body{
 .profiles{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     width: 40vh;
     height: 50vh;
 }
 
-.profile-image{
+.profile-img{
     width: 15vh;
     height: 15vh;
     border-radius: 100vh;
-    background: url(./gambar/edhos.png) center;
-    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-1{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100vh;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-slides{
+    display: none;
 }
 
 .profile-text,
@@ -403,7 +436,7 @@ footer{
     
     .judul{
         margin-top: 0;
-        width: 60vh;
+        width: 30vh;
         height: 70vh;
     }
     

@@ -20,7 +20,13 @@
     </nav>
 
     <div class="header">
+        <div class="banner">
+            <img class="slides" src="/gambar/laptop.jpg">
+            <img class="slides" src="/gambar/download.jpeg">
+            <img class="slides" src="/gambar/laptop2.jpg">
+        </div>
         <div class="judul">
+            <img class="img-1">
             <h1>HELP YOUR PROBLEM</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cumque modi saepe deleniti obcaecati sapiente provident! Est itaque fugit delectus, dicta tenetur, aliquid amet aliquam corrupti quae praesentium aspernatur accusamus!</p>
             <div class="more">
@@ -63,18 +69,43 @@
     </div>
 
     <div class="profile">
-        <div class="next icon-next-1"></div>
-        <div class="profiles">
+        <button><div class="next icon-next-1" onclick="plusDivs(-1)"></div></button>
+        <div class="profiles profile-slides">
             <div class="profile-name">
                 <h1>Fahmi</h1>
             </div>
-            <div class="profile-image"></div>
-            <div class="profile-text">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse maiores voluptatem magni tenetur cumque vitae iusto laudantium voluptatum? Eveniet, assumenda.</p>
+            <div class="profile-img">
+                <img class="profile-1" src="/gambar/edhos.png">
             </div>
-            <div class="more-icon"></div>
+            <div class="profile-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dolor voluptatum dolorum exercitationem fuga minima doloremque magnam commodi. Esse, temporibus.</p>
+            </div>
         </div>
-        <div class="next icon-2"></div>
+        <div class="profiles profile-slides">
+            <div class="profile-name">
+                <h1>Gusti</h1>
+            </div>
+            <div class="profile-img">
+                <img class="profile-1" src="/gambar/profile1.jpg">
+            </div>
+            <div class="profile-text">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui eius ab quas nulla. Error veritatis necessitatibus in, debitis tempore laboriosam?</p>
+            </div>
+        </div>
+        <div class="profiles profile-slides">
+            <div class="profile-name">
+                <h1>Andri</h1>
+            </div>
+            <div class="profile-img">
+                <img class="profile-1" src="/gambar/profile2.jpg">
+            </div>
+            <div class="profile-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, animi. Laboriosam at itaque odit distinctio blanditiis! Eos quidem aut necessitatibus rerum! Odit facilis unde sint, itaque deleniti eius est blanditiis!</p>
+            </div>
+        </div>
+        <button>
+            <div class="next icon-2" onclick="plusDivs(1)">
+            </div></button>
     </div>
 
     <div class="form">
@@ -89,5 +120,6 @@
     <footer>
         <h4>Copyright &#169; Muhammad Fahmi All Rights Reserved</h4>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

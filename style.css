@@ -8,12 +8,22 @@ body{
     margin: 0;
 }
 
+nav{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(51, 148, 148);
 }
 
 .logo{
@@ -58,7 +68,6 @@ body{
     width: 100%;
 }
 
-
 .slides{
     display: none;
 }
@@ -94,10 +103,6 @@ body{
     font-weight: bold;
 }
 
-.more > a{
-    font-weight: bold;
-}
-
 .more{
     background-color: white;
     border-radius: 10px;
@@ -109,6 +114,11 @@ body{
     text-decoration: none;
     color: black;
     padding: 30px 145px 30px 145px;
+    font-weight: bold;
+}
+
+.more:hover{
+    background-color: rgb(51, 148, 148);
 }
 
 .service > h2{
@@ -301,6 +311,11 @@ button{
     border: none;
 }
 
+.button > button:hover{
+    background: rgb(134, 213,213);
+    color: white;
+}
+
 input::placeholder{
     color: #ffffff;
     font-weight: bold;
@@ -325,6 +340,7 @@ footer{
     color: white;
     justify-content: center;
 }
+
 
 @media only screen and (max-width: 425px) and (min-width: 375px){
     .navbar{
@@ -506,8 +522,26 @@ footer{
     input[type=text]{
         font-size: 1vh;
     }
-}
 
+    .navbar.responsive{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav > .navbar.responsive > .ham{
+        position: absolute;
+        text-align: center;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+        position: relative;
+    }
+}
 
 
 @media only screen and (max-width: 903px) and (min-width: 620px){

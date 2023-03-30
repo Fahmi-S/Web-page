@@ -33,3 +33,13 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block";  
 }
+
+var x = document.getElementById("Topnav");
+
+function myMenu(){
+    if(x.className === "navbar"){
+        x.className += " responsive";
+    }else{
+        x.className = "navbar";
+    }
+}
